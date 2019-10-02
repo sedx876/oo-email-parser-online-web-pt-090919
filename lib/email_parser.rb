@@ -15,4 +15,3 @@ attr_accessor  :emails
     emails.split.collect { |email| email.split(" , ").join }
 end
 end
-.flatten.uniq 
