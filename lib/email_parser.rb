@@ -13,4 +13,6 @@ attr_accessor :name :emails
   
   def parse 
     emails.split.collect { |email| email.split(" , ")
-end 
+end
+emails.flatten.uniq 
+end
