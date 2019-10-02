@@ -8,6 +8,6 @@ class EmailParser
   EMAILADDRESSPARSER  #all uppercase letters?
   
   def initialize()
-   EmailAddressParser << EmailParser
+   EMAILADDRESSPARSER << EmailParser
   end 
 end 
