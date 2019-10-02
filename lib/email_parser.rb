@@ -11,8 +11,8 @@ class EmailParser
 		@emails= emails
 	end
 	
-  def parse 
-    @emails.split.collect { |address| address.split(" , ").join }
+  def parse
+		@emails = @emails.gsub(/[\s,]/ ," ").split
     #@emails.flatten.uniq 
 end
 end
