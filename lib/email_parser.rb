@@ -4,13 +4,13 @@
 # or whitespace (' ').
 
 class EmailParser
-
-attr_accessor  :emails 
   
-  def initialize(emails)
-   @emails = emails 
-  end 
-  
+	attr_accessor :emails
+	
+	def initialize(emails)
+		@emails= emails
+	end
+	
   def parse 
     @emails.split.collect { |address| address.split(" , ").join }
     #@emails.flatten.uniq 
