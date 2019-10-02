@@ -13,6 +13,6 @@ attr_accessor  :emails
   
   def parse 
     emails.split.collect { |email| email.split(" , ") }
-    email.uniq 
+    @email.uniq 
 end
 end
