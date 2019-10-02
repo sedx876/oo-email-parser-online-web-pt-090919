@@ -12,5 +12,5 @@ attr_accessor :name :emails
   end 
   
   def parse 
-    emails.split.collect 
+    emails.split.collect { |email|
 end 
